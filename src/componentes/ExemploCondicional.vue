@@ -3,7 +3,8 @@
 <script setup>
 
 //exibir variavel
-let exibir = true
+let exibir = true;
+let media = 2;
 
 
 </script>
@@ -11,5 +12,8 @@ let exibir = true
 <!--HTML------>
 <template>
 
-    <h1 v-if="exibir"> Hello word </h1>
+    
+    <p v-if="media>= 7">Aproivado(a)</p>
+    <p v-else-if="media >=5">em EXAme</p>
+    <p v-else>Reprovado</p>
 </template>
